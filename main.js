@@ -39,6 +39,7 @@ function writeStory() {
 function clearStory() {
     showInputForm();
     hideStory();
+    clearInputForm();
 };
 function hideInputForm() {
     targetForm.classList.add('hidden');
@@ -91,12 +92,26 @@ function alertNoInput(dataModel) {
         `${dataModel.inputClothing1}` === "" ||
         `${dataModel.inputClothing21}` === "" ||
         `${dataModel.inputBeverage1}` === "" ||
-        `${dataModel.inputFood1}` === "") {
+        `${dataModel.inputFood1}` === ""
+        )
+        {
             return alert('Enter Value Please');
-   } else {
-       hideInputForm();
-       showStory();
-   }; 
+        } else {
+            hideInputForm();
+            showStory();
+        }; 
+    };
+ function clearInputForm() {
+    console.log('yes');
+    inputFormNoun1.value = "";
+    inputFormPlace1.value = "";
+    inputFormNum1.value = "";
+    inputFormNoun2.value = "";
+    inputFormVerb1.value = "";
+    inputFormClothing1.value = "";
+    inputFormClothing2.value = "";
+    inputFormBeverage1.value = "";
+    inputFormFood1.value = "";
  };
 
 
@@ -137,4 +152,10 @@ function alertNoInput(dataModel) {
 //2) show alert box if input box not full
 //3) build function to determine if box not full
 //4) add alert box to function
-//5) move add/remove to the else of alert bot
+//5) move add/remove to the else of alert box
+
+//Clear input boxes after user returns from story
+//1) research options. plan approach.
+//2) create function to set .value = "" when user hits clear
+//3) test
+//4) ensure saved story array still entact/has content
