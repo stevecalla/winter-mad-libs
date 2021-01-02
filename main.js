@@ -22,11 +22,11 @@ var storyClothing1 = document.querySelector('#clothing1Text');
 var storyClothing2 = document.querySelector('#clothing2Text');
 var storyBeverage1 = document.querySelector('#beverage1Text');
 var storyFood1 = document.querySelector('#food1Text');
-// var storyArray = [];
+var storyArray = [];
 
 //create event listener(s)
 targetWriteButton.addEventListener('click', writeStory);
-clearStoryButton.addEventListener('click', a);
+clearStoryButton.addEventListener('click', clearStory);
 
 //create functions
 function writeStory() {
@@ -35,10 +35,9 @@ function writeStory() {
     var dataModel = gatherDataModel(); 
     console.log(dataModel);
     completeStory(dataModel);
-    // saveStories(dataModel);
+    saveStories(dataModel);
 };
-function a() {
-    event.preventDefault;
+function clearStory() {
     console.log('yes');
     showInputForm();
     hideStory();
@@ -80,10 +79,10 @@ function completeStory(dataModel) {
     storyBeverage1.innerText = `${dataModel.inputBeverage1}`; 
     storyFood1.innerText = `${dataModel.inputFood1}`; 
 };
-// function saveStories(dataModel) {
-//     storyArray.push(dataModel);
-//     console.log(storyArray);
-// };
+function saveStories(dataModel) {
+    storyArray.push(dataModel);
+    console.log(storyArray);
+};
 
 
 //Step-by-Step
@@ -106,13 +105,14 @@ function completeStory(dataModel) {
 //3) Create function to replace story test with innertext   DONE
 //4) Create Data Model structure                            DONE
 
-//Save stories to array
-//1) create function to add stories to array
-//2) call function when write story button clicked
-
 //Add clear story button                            
 //1) Add clear button in story block HTML
 //2) Add target variable for clear button
 //3) Add event listener for clear button
 //4) Add function for clear button to hide story/show form
 //5) test
+
+//Save stories to array
+//1) create save story empty array
+//2) create function to add stories to array
+//3) call function when write story button clicked
