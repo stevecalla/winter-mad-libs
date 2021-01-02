@@ -30,15 +30,13 @@ clearStoryButton.addEventListener('click', clearStory);
 
 //create functions
 function writeStory() {
-    hideInputForm();
-    showStory();
     var dataModel = gatherDataModel(); 
+    alertNoInput(dataModel);
     console.log(dataModel);
     completeStory(dataModel);
     saveStories(dataModel);
 };
 function clearStory() {
-    console.log('yes');
     showInputForm();
     hideStory();
 };
@@ -81,8 +79,25 @@ function completeStory(dataModel) {
 };
 function saveStories(dataModel) {
     storyArray.push(dataModel);
-    console.log(storyArray);
+    // console.log(storyArray);
 };
+function alertNoInput(dataModel) {
+    if (
+        `${dataModel.inputNoun1}` === "" ||
+        `${dataModel.inputPlace1}` === "" ||
+        `${dataModel.inputnum1}` === "" ||
+        `${dataModel.inputNoun2}` === "" ||
+        `${dataModel.inputVerb1}` === "" ||
+        `${dataModel.inputClothing1}` === "" ||
+        `${dataModel.inputClothing21}` === "" ||
+        `${dataModel.inputBeverage1}` === "" ||
+        `${dataModel.inputFood1}` === "") {
+            return alert('Enter Value Please');
+   } else {
+       hideInputForm();
+       showStory();
+   }; 
+ };
 
 
 //Step-by-Step
@@ -116,3 +131,10 @@ function saveStories(dataModel) {
 //1) create save story empty array
 //2) create function to add stories to array
 //3) call function when write story button clicked
+
+//Ensure all input boxes are full
+//1) research options. plan approach.
+//2) show alert box if input box not full
+//3) build function to determine if box not full
+//4) add alert box to function
+//5) move add/remove to the else of alert bot
