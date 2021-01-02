@@ -1,6 +1,7 @@
 
 //create variables
 var targetWriteButton = document.querySelector('.write-button');
+var clearStoryButton = document.querySelector('.clear-story-button');
 var targetForm = document.querySelector('.form');
 var targetStoryText = document.querySelector('.story');
 var inputFormNoun1 = document.querySelector('#noun1');
@@ -11,7 +12,7 @@ var inputFormVerb1 = document.querySelector('#verb1');
 var inputFormClothing1 = document.querySelector('#clothing1');
 var inputFormClothing2 = document.querySelector('#clothing2');
 var inputFormBeverage1 = document.querySelector('#beverage1');
-var inputFormFood1 = document.querySelector('#food1');=
+var inputFormFood1 = document.querySelector('#food1');
 var storyNoun1 = document.querySelector('#noun1Text');
 var storyPlace1 = document.querySelector('#place1Text');
 var storyNum1 = document.querySelector('#num1Text');
@@ -21,9 +22,11 @@ var storyClothing1 = document.querySelector('#clothing1Text');
 var storyClothing2 = document.querySelector('#clothing2Text');
 var storyBeverage1 = document.querySelector('#beverage1Text');
 var storyFood1 = document.querySelector('#food1Text');
+// var storyArray = [];
 
 //create event listener(s)
 targetWriteButton.addEventListener('click', writeStory);
+clearStoryButton.addEventListener('click', a);
 
 //create functions
 function writeStory() {
@@ -31,13 +34,26 @@ function writeStory() {
     showStory();
     var dataModel = gatherDataModel(); 
     console.log(dataModel);
-    completeStory(dataModel); 
+    completeStory(dataModel);
+    // saveStories(dataModel);
+};
+function a() {
+    event.preventDefault;
+    console.log('yes');
+    showInputForm();
+    hideStory();
 };
 function hideInputForm() {
     targetForm.classList.add('hidden');
 };
+function showInputForm() {
+    targetForm.classList.remove('hidden');
+};
 function showStory() {
     targetStoryText.classList.remove('hidden');
+};
+function hideStory() {
+    targetStoryText.classList.add('hidden');
 };
 function gatherDataModel() {
     var inputData = {
@@ -64,6 +80,10 @@ function completeStory(dataModel) {
     storyBeverage1.innerText = `${dataModel.inputBeverage1}`; 
     storyFood1.innerText = `${dataModel.inputFood1}`; 
 };
+// function saveStories(dataModel) {
+//     storyArray.push(dataModel);
+//     console.log(storyArray);
+// };
 
 
 //Step-by-Step
@@ -82,6 +102,17 @@ function completeStory(dataModel) {
 
 //Insert input values into story
 //1) How to do it? Review HTML. Plan approach               DONE
-//2) Target ids in the story text
-//3) Create function to replace story test with innertext
-//4) Create Data Model structure
+//2) Target ids in the story text                           DONE
+//3) Create function to replace story test with innertext   DONE
+//4) Create Data Model structure                            DONE
+
+//Save stories to array
+//1) create function to add stories to array
+//2) call function when write story button clicked
+
+//Add clear story button                            
+//1) Add clear button in story block HTML
+//2) Add target variable for clear button
+//3) Add event listener for clear button
+//4) Add function for clear button to hide story/show form
+//5) test
