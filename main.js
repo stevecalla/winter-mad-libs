@@ -34,7 +34,6 @@ function writeStory() {
     alertNoInput(dataModel);
     console.log(dataModel);
     completeStory(dataModel);
-    saveStories(dataModel);
 };
 function clearStory() {
     showInputForm();
@@ -99,6 +98,7 @@ function alertNoInput(dataModel) {
         } else {
             hideInputForm();
             showStory();
+            saveStories(dataModel);
         }; 
     };
  function clearInputForm() {
@@ -159,3 +159,8 @@ function alertNoInput(dataModel) {
 //2) create function to set .value = "" when user hits clear
 //3) test
 //4) ensure saved story array still entact/has content
+
+//Fix bug - saves story array when input boxes not full
+//1) determine approach
+//2) move save story function into the alert no input else block
+//3) test
