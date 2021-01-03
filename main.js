@@ -184,6 +184,10 @@ function alertNoInput(dataModel) {
 //1) Add box shadow to wrapper box                          DONE
 //2) Add image based on winter theme                        DONE
 
+//Unhide story box for formatting work                      DONE
+//Add background image to story box                         DONE
+//Remove body background image                              DONE
+
 //Adjust font to something from google super fun
 //Add media queries?
 //Add local storagee?
