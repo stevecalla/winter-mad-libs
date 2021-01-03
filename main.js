@@ -83,15 +83,16 @@ function saveStories(dataModel) {
 };
 function alertNoInput(dataModel) {
     if (
-        `${dataModel.inputNoun1}` === "" ||
-        `${dataModel.inputPlace1}` === "" ||
-        `${dataModel.inputnum1}` === "" ||
-        `${dataModel.inputNoun2}` === "" ||
-        `${dataModel.inputVerb1}` === "" ||
-        `${dataModel.inputClothing1}` === "" ||
-        `${dataModel.inputClothing21}` === "" ||
-        `${dataModel.inputBeverage1}` === "" ||
-        `${dataModel.inputFood1}` === ""
+        `${dataModel.inputNoun1}` === "" 
+        // ||
+        // `${dataModel.inputPlace1}` === "" ||
+        // `${dataModel.inputnum1}` === "" ||
+        // `${dataModel.inputNoun2}` === "" ||
+        // `${dataModel.inputVerb1}` === "" ||
+        // `${dataModel.inputClothing1}` === "" ||
+        // `${dataModel.inputClothing21}` === "" ||
+        // `${dataModel.inputBeverage1}` === "" ||
+        // `${dataModel.inputFood1}` === ""
         )
         {
             return alert('Enter Value Please');
@@ -165,10 +166,24 @@ function alertNoInput(dataModel) {
 //2) move save story function into the alert no input else block
 //3) test
 
+//---------------CSS FOPRMATTING------------
 //Adjust font to something fun
-//1) Add font to global body of CSS
+//1) Add font to global body of CSS                         DONE
 
+//Center content in middle of page
+//1) Display flex at highest level                          DONE
+//2) Set height / width                                     DONE
+//3) set flex direction to column                           DONE
+//4) set align items/align content                          DONE
 
+//Add color to background
+//1) find fun color for background                          DONE
+//2) find fun color for main box                            DONE
 
+//Add image to background
+//1) Add box shadow to wrapper box                          DONE
+//2) Add image based on winter theme                        DONE
 
 //Adjust font to something from google super fun
+//Add media queries?
+//Add local storagee?
