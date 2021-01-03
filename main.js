@@ -135,32 +135,40 @@ function alertNoInput(dataModel) {
 //3) Create function to replace story test with innertext   DONE
 //4) Create Data Model structure                            DONE
 
-//Add clear story button                            
+//Add clear story button                                    DONE                  
 //1) Add clear button in story block HTML
 //2) Add target variable for clear button
 //3) Add event listener for clear button
 //4) Add function for clear button to hide story/show form
 //5) test
 
-//Save stories to array
+//Save stories to array                                     DONE
 //1) create save story empty array
 //2) create function to add stories to array
 //3) call function when write story button clicked
 
-//Ensure all input boxes are full
+//Ensure all input boxes are full                           DONE
 //1) research options. plan approach.
 //2) show alert box if input box not full
 //3) build function to determine if box not full
 //4) add alert box to function
 //5) move add/remove to the else of alert box
 
-//Clear input boxes after user returns from story
+//Clear input boxes after user returns from story           DONE
 //1) research options. plan approach.
 //2) create function to set .value = "" when user hits clear
 //3) test
 //4) ensure saved story array still entact/has content
 
-//Fix bug - saves story array when input boxes not full
+//Fix bug - saves story array when input boxes not full     DONE
 //1) determine approach
 //2) move save story function into the alert no input else block
 //3) test
+
+//Adjust font to something fun
+//1) Add font to global body of CSS
+
+
+
+
+//Adjust font to something from google super fun
