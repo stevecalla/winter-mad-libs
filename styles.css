@@ -40,7 +40,7 @@ ul {
   font-size: 0.6em;
   /* opacity: 85%; */
   display: flex;
-  height: 15em;
+  height: 14em;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 2em;
@@ -64,7 +64,7 @@ input {
 p {
   background-color: black;
   text-align: center;
-  height: 15em;
+  height: 14em;
   font-family: "Corben";
   font-size: 0.6em;
   font-weight: boulder;
@@ -76,6 +76,13 @@ p {
 span {
   color: red;
   font-weight: bolder;
+}
+
+button {
+  margin-left: 3em;
+  color: red;
+  padding: .75em;
+  border: .25em solid #000;
 }
 
 .hidden {
