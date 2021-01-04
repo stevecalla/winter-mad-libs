@@ -1,3 +1,92 @@
+body {
+  /* background-color: #28BC4E; */
+  /* background-color: #AC46B4;  */
+  background-image: url("./images/cover-image.jpeg");
+  /* background-image: url("./images/game-image.jpeg"); */
+  /* background-image: url("./images/road-map-image.jpeg"); */
+  background-size: content;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  background-color: #28BC4E;
+  opacity: 95%;
+  display: flex;
+  flex-direction: column; 
+  margin-top: 5em;
+  height: 30em;
+  width: 50%;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.20), 0 15px 12px rgba(0,0,0,0.22);
+  border: 2em solid #000;
+}
+
+main {
+  /* background-image: url("./images/winterImage.jpg"); */
+  background-color: darkviolet;
+  color: white;
+  height: 100%;
+  font-size: 2em;
+  /* opacity: 85%; */
+}
+
+ul {
+  background-color: black;
+  text-align:left;
+  font-size: 0.6em;
+  /* opacity: 85%; */
+  display: flex;
+  height: 14em;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 2em;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0px;
+  transform: skewX(-10deg);
+}
+
+input {
+  display: flex;
+  font-size: .9em;
+  width: 9em;
+  color: darkviolet;
+  font-weight: boulder
+}
+
+p {
+  background-color: black;
+  text-align: center;
+  height: 14em;
+  font-family: "Corben";
+  font-size: 0.6em;
+  font-weight: boulder;
+  margin: 2em;
+  /* opacity: 85%; */
+  transform: skewX(-10deg);
+}
+
+span {
+  color: red;
+  font-weight: bolder;
+}
+
+button {
+  margin-left: 3em;
+  color: red;
+  padding: .75em;
+  border: .25em solid #000;
+}
+
 .hidden {
   display: none!important;
+  /* display: none; */
 }
+
