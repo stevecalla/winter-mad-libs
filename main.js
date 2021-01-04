@@ -85,16 +85,15 @@ function saveStories(dataModel) {
 };
 function alertNoInput(dataModel) {
     if (
-        `${dataModel.inputNoun1}` === "" 
-        // ||
-        // `${dataModel.inputPlace1}` === "" ||
-        // `${dataModel.inputnum1}` === "" ||
-        // `${dataModel.inputNoun2}` === "" ||
-        // `${dataModel.inputVerb1}` === "" ||
-        // `${dataModel.inputClothing1}` === "" ||
-        // `${dataModel.inputClothing21}` === "" ||
-        // `${dataModel.inputBeverage1}` === "" ||
-        // `${dataModel.inputFood1}` === ""
+        `${dataModel.inputNoun1}` === "" ||
+        `${dataModel.inputPlace1}` === "" ||
+        `${dataModel.inputnum1}` === "" ||
+        `${dataModel.inputNoun2}` === "" ||
+        `${dataModel.inputVerb1}` === "" ||
+        `${dataModel.inputClothing1}` === "" ||
+        `${dataModel.inputClothing21}` === "" ||
+        `${dataModel.inputBeverage1}` === "" ||
+        `${dataModel.inputFood1}` === ""
         )
         {
             return alert('Enter Value Please');
