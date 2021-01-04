@@ -2,6 +2,7 @@
 //create variables
 var targetWriteButton = document.querySelector('.write-button');
 var clearStoryButton = document.querySelector('.clear-story-button');
+var getStoryButton = document.querySelector('.get-default-input-button');
 var targetForm = document.querySelector('.form');
 var targetStoryText = document.querySelector('.story');
 var inputFormNoun1 = document.querySelector('#noun1');
@@ -27,6 +28,7 @@ var storyArray = [];
 //create event listener(s)
 targetWriteButton.addEventListener('click', writeStory);
 clearStoryButton.addEventListener('click', clearStory);
+getStoryButton.addEventListener('click', getStory);
 
 //create functions
 function writeStory() {
@@ -103,7 +105,7 @@ function alertNoInput(dataModel) {
         }; 
     };
  function clearInputForm() {
-    console.log('yes');
+    // console.log('yes');
     inputFormNoun1.value = "";
     inputFormPlace1.value = "";
     inputFormNum1.value = "";
@@ -114,6 +116,19 @@ function alertNoInput(dataModel) {
     inputFormBeverage1.value = "";
     inputFormFood1.value = "";
  };
+
+ function getStory() {
+    console.log('yes');
+    inputFormNoun1.value = "snow";
+    inputFormPlace1.value = "sky";
+    inputFormNum1.value = "40";
+    inputFormNoun2.value = "snow";
+    inputFormVerb1.value = "sledding";
+    inputFormClothing1.value = "gloves";
+    inputFormClothing2.value = "winter boots";
+    inputFormBeverage1.value = "chocolate";
+    inputFormFood1.value = "chicken soup";
+ }
 
 
 //Step-by-Step
@@ -195,6 +210,8 @@ function alertNoInput(dataModel) {
 //diagnol input boxes and story box                         DONE
 // https://stackoverflow.com/questions/44570812/how-to-create-diagonal-inputs
 //https://css-tricks.com/create-diagonal-layouts-like-its-2020/
+//add new madlib background image                           DONE
+
 
 
 //Adjust font to something from google super fun

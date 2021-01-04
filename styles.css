@@ -26,18 +26,19 @@ body {
 }
 
 main {
-  background-image: url("./images/winterImage.jpg");
+  /* background-image: url("./images/winterImage.jpg"); */
+  background-color: darkviolet;
   color: white;
   height: 100%;
   font-size: 2em;
-  opacity: 85%;
+  /* opacity: 85%; */
 }
 
 ul {
   background-color: black;
   text-align:left;
   font-size: 0.6em;
-  opacity: 85%;
+  /* opacity: 85%; */
   display: flex;
   height: 15em;
   flex-direction: column;
@@ -68,8 +69,8 @@ p {
   font-size: 0.6em;
   font-weight: boulder;
   margin: 2em;
-  opacity: 85%;
-  /* transform: skewX(-10deg); */
+  /* opacity: 85%; */
+  transform: skewX(-10deg);
 }
 
 span {
