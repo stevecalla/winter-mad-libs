@@ -48,6 +48,10 @@ li {
 
 input {
   display: flex;
+  font-size: .9em;
+  width: 9em;
+  color: darkviolet;
+  font-weight: boulder
 }
 
 p {

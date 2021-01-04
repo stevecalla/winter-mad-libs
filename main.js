@@ -189,6 +189,9 @@ function alertNoInput(dataModel) {
 //Remove body background image                              DONE
 
 //Formating input box to match story box                    DONE
+//Make span font red                                        DONE
+//set default values for input box
+
 
 //Adjust font to something from google super fun
 //Add media queries?
