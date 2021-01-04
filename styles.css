@@ -61,6 +61,11 @@ p {
   opacity: 85%;
 }
 
+span {
+  color: red;
+  font-weight: bolder;
+}
+
 .hidden {
   display: none!important;
   /* display: none; */
