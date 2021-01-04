@@ -190,7 +190,9 @@ function alertNoInput(dataModel) {
 
 //Formating input box to match story box                    DONE
 //Make span font red                                        DONE
-//set default values for input box
+//set default values for input box                          DONE
+//Add google font for story                                 DONE
+
 
 
 //Adjust font to something from google super fun

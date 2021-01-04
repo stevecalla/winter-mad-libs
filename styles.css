@@ -58,8 +58,8 @@ p {
   background-color: black;
   text-align: center;
   height: 15em;
-  /* width: 600px; */
-  font-size: 0.6em;
+  font-family: "Corben";
+  font-size: 0.7em;
   font-weight: boulder;
   margin: 2em;
   opacity: 85%;
