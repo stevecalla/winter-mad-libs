@@ -192,7 +192,9 @@ function alertNoInput(dataModel) {
 //Make span font red                                        DONE
 //set default values for input box                          DONE
 //Add google font for story                                 DONE
-
+//diagnol input boxes and story box                         DONE
+// https://stackoverflow.com/questions/44570812/how-to-create-diagonal-inputs
+//https://css-tricks.com/create-diagonal-layouts-like-its-2020/
 
 
 //Adjust font to something from google super fun
